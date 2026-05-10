@@ -1,5 +1,5 @@
 Below is a full view of the git.R executable's documentation in the CLI.
-
+```r
 exec$ rscript git.R -h
 USAGE:
   git.R file_changes help
@@ -41,29 +41,34 @@ OPTIONS:
   --commit-file                 Mode that outputs which files were edited in each commit
   --commit-entity               Mode that outputs which entities were edited in each commit
   --author-committer            Mode that outputs which authors made changes with which committers 
-
-exec $ rscript git.R file_changes help
-ℹ Outputs a git log to save_file_name_path using parse_gitlog().
-exec $ rscript git.R entity_changes help
-ℹ Outputs log of changed entities to save_file_name_path using parse_gitlog_entity. An entity is a function, class, or method in R.
-exec$ rscript git.R file_network help
-ℹ Outputs csv of nodes and csv of edges of a file co-change network made using the selected mode. Use git.R --help for mode descriptions.
-exec$ rscript git.R entity_network help
-ℹ Outputs csv of nodes and csv of edges of an entity network made using the selected mode. Use git.R --help for mode descriptions.
-
-Executable -help documentation follows the format shown above.
-The sections to be included are as follows;
-USAGE:
-Syntax of command execution with required arguments and options.
-DESCRIPTION:
-Breif description of what the executable does. Also references Kaiaulu's README.md for more info.
-COMMANDS:
-Descriptions of each command. This section can be ommitted in executables with only one command, since in those cases the description encapsulates the command's purpose.
-ARGUMENTS:
-Describes what each argument expects.
-OPTIONS:
-Describes what each optional flag does.
-
-Additionally there are help options for each command which provide a more in depth explanation of the command.
-
-Kaiaulu executables use docopt. See docopt's documentation for syntax explanations.
+```
+exec $ rscript git.R file_changes help  
+ℹ Outputs a git log to save_file_name_path using parse_gitlog().  
+exec $ rscript git.R entity_changes help  
+ℹ Outputs log of changed entities to save_file_name_path using parse_gitlog_entity. An entity is a function, class, or method in R.  
+exec$ rscript git.R file_network help  
+ℹ Outputs csv of nodes and csv of edges of a file co-change network made using the selected mode. Use git.R --help for mode descriptions.  
+exec$ rscript git.R entity_network help  
+ℹ Outputs csv of nodes and csv of edges of an entity network made using the selected mode. Use git.R --help for mode descriptions.  
+  
+Executable -help documentation follows the format shown above.  
+The sections to be included are as follows;  
+  
+USAGE:  
+Syntax of command execution with required arguments and options.  
+  
+DESCRIPTION:  
+Breif description of what the executable does. Also references Kaiaulu's README.md for more info.  
+  
+COMMANDS:  
+Descriptions of each command. This section can be ommitted in executables with only one command, since in those cases the description encapsulates the command's purpose.  
+  
+ARGUMENTS:  
+Describes what each argument expects.  
+  
+OPTIONS:  
+Describes what each optional flag does.  
+  
+Additionally there are help options for each command which provide a more in depth explanation of the command.  
+  
+Kaiaulu executables use docopt. See docopt's documentation for syntax explanations.  
